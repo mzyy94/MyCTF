@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>柚子胡椒Vol.3 - 柚子胡椒CTF by mzyy94</title>
+		<meta name="author" content="mzyy94">
+		<meta name="description" content="柚子胡椒Vol.3 at TDU CTF 2014 Satellite in ConoHaにチャレンジ" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="mzyy94" />
+		<meta name="twitter:title" content="柚子胡椒Vol.3 - 柚子胡椒CTF by mzyy94" />
+		<meta name="twitter:description" content="柚子胡椒Vol.3 at TDU CTF 2014 Satellite in ConoHaにチャレンジ" />
+		<meta name="twitter:url" content="http://ctf.mzyy94.com/q/TDUCTF2014-NW300/" />
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://purecss.io/css/layouts/side-menu-old-ie.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="http://purecss.io/css/layouts/side-menu.css">
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-41944495-5', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="layout">
+			<!-- Menu toggle -->
+			<a href="#menu" id="menuLink" class="menu-link">
+				<!-- Hamburger icon -->
+				<span></span>
+			</a>
+
+			<nav id="menu">
+				<div class="pure-menu">
+					<a class="pure-menu-heading" href="#">MZYY94 CTF</a>
+					<ul class="pure-menu-list">
+						<li class="pure-menu-item">
+							<a href="/" class="pure-menu-link">Home</a>
+						</li>
+						<li class="pure-menu-item menu-item-divided pure-menu-selected">
+							<a href="/q/" class="pure-menu-link">Problems</a>
+						</li>
+						<li class="pure-menu-item menu-item-divided">
+							<a href="https://github.com/mzyy94/MyCTF/" class="pure-menu-link">GitHub</a>
+						</li>
+						<li class="pure-menu-item"><a href="https://twitter.com/mzyy94" class="pure-menu-link">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<main id="main">
+				<header class="header">
+					<h1>柚子胡椒Vol.3</h1>
+					<h2>TDU CTF 2014 Satellite in ConoHa</h2>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="mzyy94CTF">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<table class="pure-table pure-table-horizontal" style="width: 200px; margin: 0 auto 20px auto;">
+						<thead>
+							<tr>
+								<th>ジャンル</th>
+								<th>得点</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>NW</td>
+								<td>300</td>
+							</tr>
+						</tbody>
+					</table>
+				</header>
+				<div class="content">
+					<section>
+						<h1 class="content-subhead">問題</h1>
+						<p>
+							フラッグを探せ！
+						</p>
+						<p>
+							問題ファイル：<a href="./unknown.pcap">unknown.pcap</a>
+						</p>
+					</section>
+					<script src="/sha512.js"></script>
+					<script src="./flags-hash.js"></script>
+					<script src="/check.js"></script>
+					<section>
+						<form class="pure-form" onsubmit="return check()" name="flag" novalidate>
+							<fieldset>
+								<legend>Enter your flag</legend>
+								<input type="text" name="flag" placeholder="TDU{[0-9a-zA-Z_ \-!]*\}" pattern="TDU{[0-9a-zA-Z_ \-!]*\}" required>
+								<button type="submit" class="pure-button pure-button-primary">Submit</button>
+							</fieldset>
+						</form>
+					</section>
+					<section id="result">
+					</section>
+				</div>
+			</main>
+		</div>
+	</body>
+	<script src="http://purecss.io/js/ui.js"></script>
+</html>
