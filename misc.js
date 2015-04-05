@@ -30,3 +30,10 @@ function check() {
 
 	return false;
 }
+
+function toggleHint() {
+	var hint = document.querySelector('#hint');
+	hint.style.display = hint.style.display ? "" : "none";
+	var hintBtn = document.querySelector('button.hint');
+	hintBtn.classList.toggle('pure-button-active');
+}
