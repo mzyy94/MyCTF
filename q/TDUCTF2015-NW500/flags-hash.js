@@ -1,0 +1,7 @@
+sha384hash = [
+	{
+		"point": 500,
+		"hash": "737d4ffef62acc0a6a7ad2e2b2d3435a6b172b228d7892cf35bac9d5f4f935d39316224496c9b7a98617cc824104a398"
+	}
+]
+
