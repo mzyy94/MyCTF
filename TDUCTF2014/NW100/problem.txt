@@ -1,3 +1,0 @@
-PINで試行したのは何？
-
-問題ファイル：bluetooth.pcap
